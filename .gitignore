@@ -2,3 +2,8 @@
 .coverage
 hashserv/config.py
 venv
+env
+*.swp
+*.pyc
+dist/
+hashserv.egg-info/

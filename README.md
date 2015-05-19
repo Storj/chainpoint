@@ -96,3 +96,17 @@ Sample Output:
       "target": "2f7f9092b2d6c5c17cfe2bcf33fc38a41f2e4d4485b198c2b1074bba067e7168",
       "tx_id": "012fdc0eb5ebae181e1197b4e9307731473118b0634d3ede749a562e9d11809e"
     }
+
+# Development
+
+For development, first setup a virtualenv, activate it, and install the dependencies:
+```
+$ virtualenv env
+$ source env/bin/activate
+(env)$ python setup.py install
+```
+
+To check everything worked correctly, run the tests:
+```
+$ py.test 
+```
