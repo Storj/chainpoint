@@ -119,14 +119,14 @@ class MerkleTreeTest(unittest.TestCase):
     def generic_content_test(self, data, ans):
         tree = MerkleTree()
         for datum in data:
-            tree.add_hash(datum)
+            tree.add_content(datum)
         result = tree.merkle_root()
         self.assertEqual(result, ans)
 
     def generic_hash_test(self, data, ans):
         tree = MerkleTree()
         for datum in data:
-            tree.add_content(datum)
+            tree.add_hash(datum)
         result = tree.merkle_root()
         self.assertEqual(result, ans)
 
